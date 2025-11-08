@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Rozef Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg><span>Rozef</span></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academy/index.html">Rozef Academy</a></li>
+                    <li><a href="foundation/index.html">Rozef Foundation</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+                <div class="mobile-toggle"><span></span><span></span><span></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Join Our Mission</h1>
+            <p>Be part of the change. Volunteer, partner, or intern with Rozef Foundation</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Ways to Get Involved</h2>
+                <p>Choose how you'd like to contribute to our mission</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="program-content">
+                        <h3>Volunteer</h3>
+                        <p>Contribute your time and skills to help educate, empower, and support our community programs.</p>
+                        <a href="#volunteer" class="btn-learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="program-content">
+                        <h3>Partner Organization</h3>
+                        <p>Collaborate with us to amplify impact through joint programs and resource sharing.</p>
+                        <a href="#partner" class="btn-learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="program-content">
+                        <h3>Internship / Teaching</h3>
+                        <p>Gain hands-on experience in social work, education, or community development.</p>
+                        <a href="#internship" class="btn-learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Volunteer With Us</h2>
+                <p>Make a direct impact in the lives of those we serve</p>
+            </div>
+
+            <div style="max-width: 600px; margin: 2rem auto;">
+                <form id="joinForm" style="background: var(--white); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--primary-navy); margin-bottom: 1.5rem;">Volunteer Application</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Area of Interest *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an area</option>
+                            <option value="education">Education & Teaching</option>
+                            <option value="health">Health & Nutrition</option>
+                            <option value="women">Women Empowerment</option>
+                            <option value="admin">Administration</option>
+                            <option value="fundraising">Fundraising</option>
+                            <option value="events">Event Management</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <select id="availability" name="availability">
+                            <option value="weekdays">Weekdays</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why do you want to volunteer? *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="partner">
+        <div class="container">
+            <div class="section-title">
+                <h2>Partner With Us</h2>
+                <p>Organizations interested in collaboration</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Corporate Partnerships</h3>
+                    <p>CSR initiatives, employee volunteering, and skill-based support programs.</p>
+                </div>
+                <div class="about-card">
+                    <h3>NGO Collaborations</h3>
+                    <p>Joint programs, resource sharing, and knowledge exchange with like-minded organizations.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Educational Institutions</h3>
+                    <p>Student internships, research collaborations, and community service programs.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="contact.html" class="btn-primary">Contact Us for Partnership</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="internship" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Internships & Teaching Opportunities</h2>
+                <p>Gain valuable experience while making a difference</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Teaching Internships</h3>
+                    <p>Work with students from preschool to Class 12, develop teaching skills, and contribute to education.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Social Work Internships</h3>
+                    <p>Hands-on experience in community development, women empowerment, and social welfare programs.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Program Management</h3>
+                    <p>Learn about NGO operations, program planning, and impact assessment.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <p style="margin-bottom: 1rem;"><strong>Duration:</strong> 1-6 months | <strong>Stipend:</strong> Available for select positions</p>
+                <a href="contact.html" class="btn-primary">Apply for Internship</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>Rozef Foundation</h3><p>Aligarh, Uttar Pradesh, India</p><p><strong>Phone:</strong> +91 82735 62607</p><p><strong>Email:</strong> info@rozef.org</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><a href="about.html">About</a><a href="academy/index.html">Academy</a><a href="foundation/index.html">Foundation</a><a href="contact.html">Contact</a></div>
+                <div class="footer-section"><h3>Get Involved</h3><a href="join.html">Volunteer</a><a href="transparency.html">Transparency</a></div>
+                <div class="footer-section"><h3>Stay Connected</h3><form class="newsletter-form"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Rozef Foundation. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float"><svg width="30" height="30" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
+    <div class="scroll-top"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
