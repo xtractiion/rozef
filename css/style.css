@@ -2,8 +2,9 @@
    ROZEF FOUNDATION & ACADEMY - MAIN STYLESHEET
    =================================== */
 
-/* Import Alfa Slab One Font */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/momo-trust-display');
 
 /* CSS Variables - Only Midnight Blue and White */
 :root {
@@ -15,8 +16,8 @@
     --bg-light: #ffffff;
     --white: #ffffff;
     --border-color: #1a1f5c;
-    --heading-font: 'Alfa Slab One', cursive;
-    --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --heading-font: 'Momo Trust Display', 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 /* Reset & Base Styles */
@@ -90,6 +91,20 @@ nav {
     stroke-width: 2.5;
 }
 
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 1.25rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-navy);
+    letter-spacing: 0.01em;
+}
+
 .nav-menu {
     display: flex;
     gap: 2rem;
@@ -108,8 +123,8 @@ nav {
 }
 
 .btn-donate {
-    background: var(--primary-navy);
-    color: var(--white);
+    background: var(--primary-navy) !important;
+    color: var(--white) !important;
     padding: 0.875rem 2rem;
     font-size: 1rem;
     font-weight: 600;
@@ -118,12 +133,14 @@ nav {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid var(--primary-navy);
-    border-radius: 0;
+    border-radius: 6px;
 }
 
 .btn-donate:hover {
-    background: var(--white);
-    color: var(--primary-navy);
+    background: var(--white) !important;
+    color: var(--primary-navy) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 31, 92, 0.2);
 }
 
 .mobile-toggle {
@@ -150,29 +167,33 @@ nav {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    font-weight: 400;
-    line-height: 1.1;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 1rem;
     color: var(--primary-navy);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
 }
 
 h1 { 
     font-size: 3.5rem; 
-    line-height: 1.1;
+    line-height: 1.15;
+    font-weight: 900;
 }
 
 h2 { 
     font-size: 2.5rem; 
-    line-height: 1.1;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 h3 { 
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 h4 { 
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
+    font-weight: 700;
 }
 
 .hero h1 {
@@ -233,28 +254,6 @@ h4 {
     transform: translateY(-2px);
 }
 
-/* WhatsApp Float Button */
-.whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: var(--primary-navy);
-    width: 60px;
-    height: 60px;
-    border-radius: 0;
-    border: 2px solid var(--primary-navy);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 999;
-    transition: background 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    background: var(--white);
-    color: var(--primary-navy);
-}
 
 /* Section Styles */
 section {
@@ -939,11 +938,64 @@ footer {
 }
 
 /* Responsive Design */
+
+/* Large Tablets and Small Desktops (992px and down) */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-buttons .btn-cta {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablets (768px and down) */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem !important;
+        max-width: 100% !important;
+    }
+    
+    /* Logo improvements for tablets */
+    .logo {
+        gap: 10px;
+    }
+    
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .logo span {
+        font-size: 1.375rem;
+        font-weight: 700;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 75px;
         flex-direction: column;
         background: var(--white);
         width: 100%;
@@ -951,6 +1003,7 @@ footer {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0,0,0,0.05);
         padding: 2rem 0;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -958,19 +1011,39 @@ footer {
     }
 
     .mobile-toggle {
-        display: flex;
+        display: flex !important;
+    }
+
+    .hero {
+        padding: 3rem 0 !important;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 1rem !important;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 1.125rem !important;
+        margin-bottom: 1.5rem !important;
+        padding: 0 1rem;
+        line-height: 1.5;
+    }
+
+    .section-title {
+        text-align: center !important;
+        margin-bottom: 2rem !important;
     }
 
     .section-title h2 {
-        font-size: 1.875rem;
+        font-size: 1.75rem !important;
+    }
+
+    .section-title p {
+        font-size: 1rem !important;
+        padding: 0 1rem;
+        line-height: 1.5;
     }
 
     .stat-number {
@@ -980,21 +1053,655 @@ footer {
     .programs-grid,
     .gallery-grid,
     .testimonials-grid,
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .whatsapp-float {
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
+    .news-grid,
+    .about-content {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
     }
 
     .scroll-top {
         right: 80px;
         width: 40px;
         height: 40px;
+    }
+    
+    /* Social Media Buttons - Mobile Adjustments */
+    .social-float-container {
+        right: 10px !important;
+        bottom: 60px !important;
+    }
+    
+    .social-float-container a {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .social-float-container svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+    
+    /* Footer Responsive */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+        padding: 2rem 1rem !important;
+    }
+    
+    .footer-section {
+        text-align: center !important;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Form Elements */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 0.875rem;
+        width: 100%;
+    }
+    
+    /* Button Adjustments */
+    .btn-primary,
+    .btn-secondary,
+    .btn-cta,
+    .btn-learn-more {
+        padding: 0.875rem 1.5rem !important;
+        font-size: 1rem !important;
+        width: auto !important;
+        max-width: 280px !important;
+        text-align: center !important;
+        margin: 0 auto 0.75rem auto !important;
+        display: block;
+        border-radius: 8px;
+    }
+    
+    /* Card Layouts */
+    .program-card,
+    .about-card {
+        padding: 1.5rem !important;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 3rem 0 !important;
+        text-align: center;
+    }
+    
+    .cta-buttons {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center;
+    }
+}
+
+/* Mobile Phones (576px and down) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 0.75rem !important;
+    }
+    
+    .hero {
+        padding: 2rem 0 !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem !important;
+        line-height: 1.3 !important;
+        padding: 0 0.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+        padding: 0 0.5rem;
+        line-height: 1.5;
+    }
+    
+    .section-title h2 {
+        font-size: 1.5rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    .section-title p {
+        font-size: 0.9375rem !important;
+        padding: 0 0.5rem;
+        line-height: 1.5;
+    }
+    
+    /* Navigation */
+    .logo {
+        gap: 8px;
+    }
+    
+    .logo span {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        padding: 1.5rem 0.5rem !important;
+    }
+    
+    .footer-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Social Media - Extra Small Screens */
+    .social-float-container {
+        right: 5px !important;
+        bottom: 40px !important;
+    }
+    
+    .social-float-container a {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .social-float-container svg {
+        width: 14px !important;
+        height: 14px !important;
+    }
+    
+    /* Cards and Program Grids */
+    .program-card,
+    .about-card {
+        padding: 1.25rem !important;
+        margin: 0 0.5rem 1rem 0.5rem;
+    }
+    
+    .program-card h3,
+    .about-card h3 {
+        font-size: 1.125rem !important;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        padding: 2rem 0 !important;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.5rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    /* All inline grid overrides for small mobile */
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        padding: 0 0.5rem;
+    }
+}
+
+/* Extra Small Mobile (480px and down) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem !important;
+    }
+    
+    /* Logo for very small screens */
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo span {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    
+    .hero {
+        padding: 1.5rem 0 !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.25rem !important;
+        padding: 0 0.25rem;
+    }
+    
+    .hero p {
+        font-size: 0.875rem !important;
+        padding: 0 0.25rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.25rem !important;
+        padding: 0 0.25rem;
+    }
+    
+    .section-title p {
+        font-size: 0.8125rem !important;
+        padding: 0 0.25rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-cta,
+    .btn-learn-more {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.875rem !important;
+        margin: 0 auto 0.5rem auto !important;
+        max-width: 220px !important;
+        width: auto !important;
+        display: block;
+        text-align: center;
+    }
+    
+    /* Founder Page Images */
+    div[style*="width: 250px; height: 250px"],
+    div[style*="width: 200px; height: 200px"],
+    div[style*="width: 180px; height: 180px"] {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    
+    /* Impact Statistics */
+    div[style*="grid-template-columns: repeat(auto-fit"] {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+        padding: 0 0.25rem;
+    }
+    
+    /* Cards extra small */
+    .program-card,
+    .about-card {
+        padding: 1rem !important;
+        margin: 0 0.25rem 0.75rem 0.25rem;
+    }
+    
+    /* Footer extra small */
+    .footer-content {
+        padding: 1rem 0.25rem !important;
+    }
+    
+    /* Social buttons extra small */
+    .social-float-container {
+        right: 2px !important;
+        bottom: 30px !important;
+    }
+    
+    .social-float-container a {
+        width: 32px !important;
+        height: 32px !important;
+    }
+    
+    .social-float-container svg {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+/* Ultra Small Screens (360px and down) */
+@media (max-width: 360px) {
+    /* Logo for ultra small screens */
+    .logo img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .logo span {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .hero h1 {
+        font-size: 1.125rem !important;
+    }
+    
+    .section-title h2 {
+        font-size: 1.125rem !important;
+    }
+    
+    .container {
+        padding: 0 0.25rem !important;
+    }
+    
+    .btn-primary,
+    .btn-secondary,
+    .btn-cta,
+    .btn-learn-more {
+        font-size: 0.8125rem !important;
+        padding: 0.625rem 0.875rem !important;
+    }
+}
+
+/* Specific Page Responsive Fixes */
+
+/* Founder Page Responsive */
+@media (max-width: 768px) {
+    /* Founder profile sections */
+    div[style*="grid-template-columns: 1fr 2fr"],
+    div[style*="grid-template-columns: 2fr 1fr"] {
+        display: block !important;
+        grid-template-columns: none !important;
+    }
+    
+    div[style*="grid-template-columns: 1fr 2fr"] > div,
+    div[style*="grid-template-columns: 2fr 1fr"] > div {
+        margin-bottom: 2rem !important;
+        text-align: center !important;
+    }
+    
+    /* Founder images */
+    div[style*="width: 250px; height: 250px"] {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto 1.5rem !important;
+    }
+    
+    /* Impact statistics grid */
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    /* Founder page specific text alignment */
+    div[style*="text-align: center"] h3,
+    div[style*="text-align: center"] p {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Smaller founder images on mobile */
+    div[style*="width: 250px; height: 250px"],
+    div[style*="width: 200px; height: 200px"] {
+        width: 180px !important;
+        height: 180px !important;
+    }
+}
+
+/* Donation Page Responsive */
+@media (max-width: 768px) {
+    .donation-container {
+        padding: 1.5rem !important;
+        margin: 1rem;
+    }
+    
+    .donation-container img {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto;
+    }
+    
+    /* Donation method cards */
+    div[style*="display: grid"][style*="gap: 2rem"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-container {
+        padding: 1rem !important;
+    }
+    
+    .donation-container img {
+        width: 180px !important;
+        height: 180px !important;
+    }
+}
+
+/* Gallery Page Responsive */
+@media (max-width: 992px) {
+    .gallery-grid {
+        column-count: 2 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-grid {
+        column-count: 1 !important;
+    }
+    
+    .gallery-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Join/Volunteer Page Responsive */
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .program-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Contact Page Responsive */
+@media (max-width: 768px) {
+    /* Contact form grid */
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* General Inline Style Overrides for Mobile */
+@media (max-width: 768px) {
+    /* Grid layouts with auto-fit */
+    div[style*="grid-template-columns: repeat(auto-fit"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Flex layouts */
+    div[style*="display: flex"][style*="gap: 1.5rem"] {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    
+    /* Padding adjustments */
+    section[style*="padding: 6rem 0"],
+    div[style*="padding: 4rem"],
+    div[style*="padding: 3rem"] {
+        padding: 2rem 1rem !important;
+    }
+    
+    /* Font size adjustments */
+    h1[style*="font-size: 3rem"] {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    h2[style*="font-size: 2.5rem"] {
+        font-size: 1.75rem !important;
+    }
+    
+    h3[style*="font-size: 3rem"] {
+        font-size: 2.25rem !important;
+    }
+    
+    /* Button adjustments */
+    a[style*="padding: 1rem 2.5rem"] {
+        padding: 0.875rem 1.5rem !important;
+        font-size: 1rem !important;
+        width: auto !important;
+        max-width: 280px !important;
+        text-align: center !important;
+        display: block !important;
+        margin: 0 auto 0.75rem auto !important;
+        border-radius: 8px !important;
+    }
+    
+    /* Text size adjustments */
+    p[style*="font-size: 1.25rem"] {
+        font-size: 1.125rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Max width adjustments */
+    p[style*="max-width: 900px"] {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra small adjustments */
+    div[style*="padding: 2rem"] {
+        padding: 1.5rem 1rem !important;
+    }
+    
+    section[style*="padding: 2rem 1rem"] {
+        padding: 1.5rem 0.5rem !important;
+    }
+    
+    h1[style*="font-size: 2rem"],
+    h1[style*="font-size: 1.75rem"] {
+        font-size: 1.5rem !important;
+    }
+    
+    h2[style*="font-size: 1.875rem"],
+    h2[style*="font-size: 1.5rem"] {
+        font-size: 1.25rem !important;
+    }
+    
+    /* Smaller buttons on mobile */
+    a[style*="padding: 0.875rem 1.5rem"] {
+        padding: 0.75rem 1.25rem !important;
+        font-size: 0.9375rem !important;
+        max-width: 250px !important;
+        margin: 0 auto 0.5rem auto !important;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 0.75rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Very small screens */
+    h1[style*="font-size: 1.5rem"] {
+        font-size: 1.25rem !important;
+    }
+    
+    h2[style*="font-size: 1.25rem"] {
+        font-size: 1.125rem !important;
+    }
+    
+    .container {
+        padding: 0 0.5rem !important;
+    }
+    
+    /* Hero section extra small */
+    section[style*="padding: 6rem 0"] {
+        padding: 1.5rem 0 !important;
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        padding: 1rem !important;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Touch devices */
+    .btn-primary,
+    .btn-secondary,
+    .btn-cta,
+    .btn-learn-more {
+        min-height: 44px;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    .social-float-container a {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .mobile-toggle {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Landscape Phone Orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 0 !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .social-float-container {
+        bottom: 20px !important;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+    /* Currently maintaining light theme only */
+    /* Can be expanded later if dark mode is needed */
+}
+
+/* Print Styles */
+@media print {
+    .social-float-container,
+    .scroll-top,
+    .mobile-toggle,
+    header nav {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .hero {
+        padding: 1rem 0 !important;
+    }
+    
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
     }
 }
 
@@ -1028,4 +1735,53 @@ footer {
 
 .fade-in {
     animation: fadeIn 0.6s ease-out;
+}
+
+/* Donation Page Styles */
+.donation-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.donation-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .donation-container {
+        padding: 1.5rem !important;
+    }
+    
+    .donation-container img {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    h3 {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-container {
+        padding: 1rem !important;
+    }
+    
+    .donation-container img {
+        width: 180px !important;
+        height: 180px !important;
+    }
 }

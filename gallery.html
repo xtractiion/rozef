@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Rozef Foundation</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg><span>Rozef</span></div>
+                <div class="logo"><img src="headerlogo.png" alt="Rozef Logo"><span>Rozef Foundation</span></div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="academy/index.html">Rozef Academy</a></li>
                     <li><a href="foundation/index.html">Rozef Foundation</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn-donate">Donate</a></li>
                 </ul>
                 <div class="mobile-toggle"><span></span><span></span><span></span></div>
             </nav>
@@ -34,173 +34,151 @@
 
     <section>
         <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 2rem;">
+                <h2>Our Programs in Action</h2>
+                <p>Browse through our work across different programs</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <button class="filter-btn active" data-filter="all" style="padding: 0.75rem 1.5rem; margin: 0.5rem; background: var(--primary-navy); color: white; border: 2px solid var(--primary-navy); border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9375rem; transition: all 0.3s;">All Programs</button>
+                <button class="filter-btn" data-filter="education" style="padding: 0.75rem 1.5rem; margin: 0.5rem; background: white; color: var(--primary-navy); border: 2px solid var(--primary-navy); border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9375rem; transition: all 0.3s;">Education</button>
+                <button class="filter-btn" data-filter="events" style="padding: 0.75rem 1.5rem; margin: 0.5rem; background: white; color: var(--primary-navy); border: 2px solid var(--primary-navy); border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9375rem; transition: all 0.3s;">Events</button>
+                <button class="filter-btn" data-filter="helping" style="padding: 0.75rem 1.5rem; margin: 0.5rem; background: white; color: var(--primary-navy); border: 2px solid var(--primary-navy); border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9375rem; transition: all 0.3s;">Helping</button>
+            </div>
+
             <div class="gallery-grid">
-                <!-- IMAGES - Education & Community -->
+                <!-- Education Programs -->
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_112645[1].jpg" alt="Classroom session">
-                    <div class="gallery-caption">Interactive Learning Session</div>
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.22.56_b49e7a46.jpg" alt="Education Program">
+                    <div class="gallery-caption">Educational Activities</div>
                 </div>
 
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122818[1].jpg" alt="Students">
-                    <div class="gallery-caption">Students in Class</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122832[1].jpg" alt="Teaching">
-                    <div class="gallery-caption">Teaching Session</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122834[1].jpg" alt="Learning">
-                    <div class="gallery-caption">Learning Activity</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122855[1].jpg" alt="Students group">
-                    <div class="gallery-caption">Group Study</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122908[1].jpg" alt="Classroom">
-                    <div class="gallery-caption">Classroom Environment</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122910[1].jpg" alt="Students learning">
-                    <div class="gallery-caption">Active Learning</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122925[1].jpg" alt="Education">
-                    <div class="gallery-caption">Educational Program</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122928[1].jpg" alt="Class activity">
-                    <div class="gallery-caption">Class Activity</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_122936[1].jpg" alt="Students">
-                    <div class="gallery-caption">Student Engagement</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131101[1].jpg" alt="Learning">
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.22.59_1b689ef7.jpg" alt="Learning Session">
                     <div class="gallery-caption">Learning Session</div>
                 </div>
 
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131104[1].jpg" alt="Class">
-                    <div class="gallery-caption">Classroom Session</div>
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.23.00_25daef64.jpg" alt="Classroom">
+                    <div class="gallery-caption">Classroom Activities</div>
                 </div>
 
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131105[1].jpg" alt="Students">
-                    <div class="gallery-caption">Students Together</div>
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.23.00_d5f57a2f.jpg" alt="Students">
+                    <div class="gallery-caption">Students Learning</div>
                 </div>
 
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131126[1].jpg" alt="Teaching">
-                    <div class="gallery-caption">Teaching Moment</div>
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.23.00_fed6c555.jpg" alt="Teaching">
+                    <div class="gallery-caption">Teaching Session</div>
                 </div>
 
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131148[1].jpg" alt="Learning">
-                    <div class="gallery-caption">Learning Together</div>
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.23.01_51f5a088.jpg" alt="Education">
+                    <div class="gallery-caption">Educational Program</div>
                 </div>
 
                 <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131205[1].jpg" alt="Class">
-                    <div class="gallery-caption">Class Environment</div>
+                    <img src="education/WhatsApp Image 2025-11-11 at 17.23.01_7e8dc81d.jpg" alt="Academy">
+                    <div class="gallery-caption">Academy Activities</div>
                 </div>
 
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131223[1].jpg" alt="Students">
-                    <div class="gallery-caption">Student Group</div>
-                </div>
-
-                <div class="gallery-item" data-category="education">
-                    <img src="assets/images/gallery/IMG_20250928_131225[1].jpg" alt="Learning">
-                    <div class="gallery-caption">Learning Activity</div>
-                </div>
-
-                <!-- Community & Events -->
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/IMG_20251009_152238[1].jpg" alt="Community">
-                    <div class="gallery-caption">Community Gathering</div>
-                </div>
-
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/IMG_20251009_152540[1].jpg" alt="Outreach">
-                    <div class="gallery-caption">Community Outreach</div>
-                </div>
-
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/IMG_20251009_152548[1].jpg" alt="Service">
-                    <div class="gallery-caption">Community Service</div>
-                </div>
-
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/IMG_20251009_162148[1].jpg" alt="Support">
-                    <div class="gallery-caption">Community Support</div>
-                </div>
-
+                <!-- Events -->
                 <div class="gallery-item" data-category="events">
-                    <img src="assets/images/gallery/IMG_20251018_165755[1].jpg" alt="Event">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.24_0d6d8afa.jpg" alt="Event">
                     <div class="gallery-caption">Foundation Event</div>
                 </div>
 
                 <div class="gallery-item" data-category="events">
-                    <img src="assets/images/gallery/IMG_20251018_170027[1].jpg" alt="Celebration">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.30_c8ca4db9.jpg" alt="Celebration">
                     <div class="gallery-caption">Celebration Event</div>
                 </div>
 
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/IMG_20251107_165118[1].jpg" alt="Community work">
-                    <div class="gallery-caption">Community Work</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.30_db7def8b.jpg" alt="Gathering">
+                    <div class="gallery-caption">Community Gathering</div>
                 </div>
 
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/IMG_20251107_170928[1].jpg" alt="Volunteers">
-                    <div class="gallery-caption">Volunteer Activity</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.31_7a09c735.jpg" alt="Program">
+                    <div class="gallery-caption">Program Event</div>
                 </div>
 
-                <!-- Women Empowerment & Health -->
-                <div class="gallery-item" data-category="women">
-                    <img src="assets/images/gallery/images_-_2025-11-07T170023.032[1].jpg" alt="Women group">
-                    <div class="gallery-caption">Women Empowerment Program</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.32_9b582711.jpg" alt="Activity">
+                    <div class="gallery-caption">Event Activity</div>
                 </div>
 
-                <div class="gallery-item" data-category="women">
-                    <img src="assets/images/gallery/images_-_2025-11-07T170030.119[1].jpg" alt="Women training">
-                    <div class="gallery-caption">Skill Development Training</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.32_c90b5104.jpg" alt="Function">
+                    <div class="gallery-caption">Foundation Function</div>
                 </div>
 
-                <div class="gallery-item" data-category="health">
-                    <img src="assets/images/gallery/images_-_2025-11-07T170054.449[1].jpg" alt="Health">
-                    <div class="gallery-caption">Health & Nutrition Program</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.33_539e5e5c.jpg" alt="Ceremony">
+                    <div class="gallery-caption">Special Ceremony</div>
                 </div>
 
-                <div class="gallery-item" data-category="women">
-                    <img src="assets/images/gallery/images_-_2025-11-07T170117.062[1].jpg" alt="Women SHG">
-                    <div class="gallery-caption">Self-Help Group Meeting</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.33_5b08a67d.jpg" alt="Occasion">
+                    <div class="gallery-caption">Special Occasion</div>
                 </div>
 
-                <div class="gallery-item" data-category="women">
-                    <img src="assets/images/gallery/images_-_2025-11-07T170133.905[1].jpg" alt="Women workshop">
-                    <div class="gallery-caption">Women's Workshop</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.34_34ca33fe.jpg" alt="Event Day">
+                    <div class="gallery-caption">Event Day</div>
                 </div>
 
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/img_2_1762581907437[1].jpg" alt="Community">
-                    <div class="gallery-caption">Community Initiative</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.36_4bdfbf4d.jpg" alt="Program Day">
+                    <div class="gallery-caption">Program Day</div>
                 </div>
 
-                <div class="gallery-item" data-category="community">
-                    <img src="assets/images/gallery/img_3_1762581918084[1].jpg" alt="Outreach">
-                    <div class="gallery-caption">Outreach Program</div>
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.41_8f8cd0b9.jpg" alt="Celebration">
+                    <div class="gallery-caption">Celebration Moment</div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.42_2112ddbb.jpg" alt="Event">
+                    <div class="gallery-caption">Event Highlights</div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.43_ef7fc3ae.jpg" alt="Gathering">
+                    <div class="gallery-caption">Event Gathering</div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.44_3d5d092f.jpg" alt="Activity">
+                    <div class="gallery-caption">Event Activity</div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.44_7ecc5c79.jpg" alt="Program">
+                    <div class="gallery-caption">Event Program</div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="events/WhatsApp Image 2025-11-11 at 17.16.45_93d87fd5.jpg" alt="Ceremony">
+                    <div class="gallery-caption">Event Ceremony</div>
+                </div>
+
+                <!-- Helping Programs -->
+                <div class="gallery-item" data-category="helping">
+                    <img src="helping/WhatsApp Image 2025-11-11 at 17.27.09_4cf6cedd.jpg" alt="Helping">
+                    <div class="gallery-caption">Community Support</div>
+                </div>
+
+                <div class="gallery-item" data-category="helping">
+                    <img src="helping/WhatsApp Image 2025-11-11 at 17.27.09_cf6c7f08.jpg" alt="Welfare">
+                    <div class="gallery-caption">Welfare Program</div>
+                </div>
+
+                <div class="gallery-item" data-category="helping">
+                    <img src="helping/WhatsApp Image 2025-11-11 at 17.27.10_2e918a0b.jpg" alt="Support">
+                    <div class="gallery-caption">Support Initiative</div>
                 </div>
             </div>
 
@@ -220,17 +198,78 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section"><h3>Rozef Foundation</h3><p>Aligarh, Uttar Pradesh, India</p><p><strong>Phone:</strong> +91 82735 62607</p><p><strong>Email:</strong> info@rozef.org</p></div>
-                <div class="footer-section"><h3>Quick Links</h3><a href="about.html">About</a><a href="academy/index.html">Academy</a><a href="foundation/index.html">Foundation</a><a href="contact.html">Contact</a></div>
+                <div class="footer-section"><h3>Rozef Foundation</h3><p>Aligarh, Uttar Pradesh, India</p><p><strong>Phone:</strong> +91 7310583554</p><p><strong>Email:</strong> rozef.alig@gmail.com</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><a href="about.html">About</a><a href="academy/index.html">Academy</a><a href="foundation/index.html">Foundation</a><a href="gallery.html">Gallery</a></div>
                 <div class="footer-section"><h3>Get Involved</h3><a href="join.html">Volunteer</a><a href="transparency.html">Transparency</a></div>
-                <div class="footer-section"><h3>Stay Connected</h3><form class="newsletter-form"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form></div>
+                <div class="footer-section"><h3>Stay Connected</h3><form class="newsletter-form"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form><div class="social-links" style="margin-top: 1rem;"><a href="https://www.facebook.com/share/1A6kdnNnDi/" target="_blank" aria-label="Facebook" style="color: white; margin-right: 1rem;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/rozef_alig?igsh=dTJnYW4xNzc4ZDhp" target="_blank" aria-label="Instagram" style="color: white; margin-right: 1rem;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://youtube.com/@rozef.foundation?si=lzn3un76gfnT9Whg" target="_blank" aria-label="YouTube" style="color: white;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div></div>
             </div>
             <div class="footer-bottom"><p>&copy; 2024 Rozef Foundation. All rights reserved.</p></div>
         </div>
     </footer>
 
-    <div class="whatsapp-float"><svg width="30" height="30" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
+    <!-- Social Media Floating Buttons -->
+    <div class="social-float-container" style="position: fixed; right: 20px; bottom: 80px; z-index: 1000; display: flex; flex-direction: column; gap: 10px;">
+        <a href="https://youtube.com/@rozef.foundation?si=lzn3un76gfnT9Whg" target="_blank" class="social-float youtube" style="width: 45px; height: 45px; border-radius: 50%; background: #FF0000; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(255,0,0,0.3); transition: all 0.3s ease; text-decoration: none;" title="Follow us on YouTube">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1A6kdnNnDi/" target="_blank" class="social-float facebook" style="width: 45px; height: 45px; border-radius: 50%; background: #1877F2; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(24,119,242,0.3); transition: all 0.3s ease; text-decoration: none;" title="Follow us on Facebook">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/rozef_alig?igsh=dTJnYW4xNzc4ZDhp" target="_blank" class="social-float instagram" style="width: 45px; height: 45px; border-radius: 50%; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(225,48,108,0.3); transition: all 0.3s ease; text-decoration: none;" title="Follow us on Instagram">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/917310583554?text=Hello%20Dr%20Mohd%20Asrarul%20Haque%2C%20I%20would%20like%20to%20know%20more%20about%20Rozef%20Foundation%20and%20how%20I%20can%20get%20involved.%20Thank%20you." target="_blank" class="social-float whatsapp" style="width: 45px; height: 45px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37,211,102,0.3); transition: all 0.3s ease; text-decoration: none;" title="Contact us on WhatsApp">
+            <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+    </div>
     <div class="scroll-top"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg></div>
     <script src="js/script.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = 'white';
+                    b.style.color = 'var(--primary-navy)';
+                });
+
+                // Add active class to clicked button
+                btn.classList.add('active');
+                btn.style.background = 'var(--primary-navy)';
+                btn.style.color = 'white';
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        if (item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
