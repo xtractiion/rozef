@@ -8,14 +8,14 @@
 
 /* CSS Variables - Only Midnight Blue and White */
 :root {
-    --primary-navy: #1a1f5c;
-    --primary-blue: #1a1f5c;
-    --accent-green: #1a1f5c;
-    --text-dark: #1a1f5c;
-    --text-gray: #1a1f5c;
+    --primary-navy: #191970;
+    --primary-blue: #191970;
+    --accent-green: #191970;
+    --text-dark: #191970;
+    --text-gray: #191970;
     --bg-light: #ffffff;
     --white: #ffffff;
-    --border-color: #1a1f5c;
+    --border-color: #191970;
     --heading-font: 'Momo Trust Display', 'Roboto', sans-serif;
     --body-font: 'Roboto', sans-serif;
 }
@@ -133,14 +133,14 @@ nav {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid var(--primary-navy);
-    border-radius: 6px;
+    border-radius: 0;
 }
 
 .btn-donate:hover {
     background: var(--white) !important;
     color: var(--primary-navy) !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 31, 92, 0.2);
+    box-shadow: 0 4px 12px rgba(25, 25, 112, 0.2);
 }
 
 .mobile-toggle {
@@ -493,7 +493,7 @@ section {
 
 .gallery-item:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(26, 31, 92, 0.15);
+    box-shadow: 0 8px 16px rgba(25, 25, 112, 0.15);
 }
 
 .gallery-item:hover img,
@@ -518,7 +518,7 @@ section {
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: white;
-    background: rgba(26, 31, 92, 0.8);
+    background: rgba(25, 25, 112, 0.8);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -531,7 +531,7 @@ section {
 }
 
 .gallery-item.video-item:hover::after {
-    background: rgba(26, 31, 92, 0.95);
+    background: rgba(25, 25, 112, 0.95);
     transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -540,7 +540,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(26, 31, 92, 0.95);
+    background: rgba(25, 25, 112, 0.95);
     color: white;
     padding: 1rem;
     font-size: 0.875rem;
@@ -1118,7 +1118,7 @@ footer {
         text-align: center !important;
         margin: 0 auto 0.75rem auto !important;
         display: block;
-        border-radius: 8px;
+        border-radius: 0;
     }
     
     /* Card Layouts */
@@ -1547,7 +1547,7 @@ footer {
         text-align: center !important;
         display: block !important;
         margin: 0 auto 0.75rem auto !important;
-        border-radius: 8px !important;
+        border-radius: 0 !important;
     }
     
     /* Text size adjustments */
